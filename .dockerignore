@@ -1,0 +1,13 @@
+# Exclude large MBTiles from build context
+*.mbtiles
+mbtiles/
+
+# Git and IDE
+.git
+.gitignore
+.cursor
+
+# Documentation and env (not needed in image)
+.env
+.env.*
+!.env.example

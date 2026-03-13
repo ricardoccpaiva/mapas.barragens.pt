@@ -1,0 +1,11 @@
+# Copy to docker-compose.override.yml to use a local mbtiles directory
+# instead of the named volume. Place osm-2020-02-10-v3.11_europe_spain.mbtiles
+# in the ./mbtiles/ directory.
+#
+# cp docker-compose.override.example.yml docker-compose.override.yml
+
+version: '3.2'
+services:
+  tileserver-gl:
+    volumes:
+      - ./mbtiles:/data/mbtiles
