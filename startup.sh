@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 MBTILES_DIR="/data/mbtiles"
-MBTILES_FILE="osm-2020-02-10-v3.11_europe_spain.mbtiles"
+MBTILES_FILE="europe.mbtiles"
 MBTILES_PATH="$MBTILES_DIR/$MBTILES_FILE"
 
 mkdir -p "$MBTILES_DIR"
@@ -10,7 +10,7 @@ if [ -n "$MBTILES_URL" ] && [ ! -f "$MBTILES_PATH" ]; then
   echo "Downloading MBTiles from $MBTILES_URL..."
   node -e "
     const u=process.env.MBTILES_URL;
-    const f='osm-2020-02-10-v3.11_europe_spain.mbtiles';
+    const f='europe.mbtiles';
     const fs=require('fs');
     const path=require('path');
     const dir='/data/mbtiles';
