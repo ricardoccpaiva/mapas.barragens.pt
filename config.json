@@ -58,7 +58,7 @@
     },
     "data": {
         "openmaptiles": {
-            "mbtiles": "/data/mbtiles/osm-2020-02-10-v3.11_europe_spain.mbtiles"
+            "mbtiles": "/data/mbtiles/europe.mbtiles"
         }
     }
 }
